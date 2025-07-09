@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #004466;
+  color: white;
+  text-align: center;
+}
+
+/* Main */
+.contenedor-principal {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  flex: 1;
+}
+
+h2{
+    text-align: center;
+}
+
+p {
+  padding: 15px 5px;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 2px solid #007BFF;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    width: 95%;
+    padding: 10px;
+  }
+
+  button {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+  }
+}
