@@ -35,8 +35,16 @@ body {
   text-align: center;
   z-index: 1000;
 }
+.color{
+  background-color: #0A2E55;
+}
 header h1 {
   margin-top: 0;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: contain;
 }
 
 /* Main */
@@ -78,6 +86,32 @@ button:hover {
 }
 
 /* Productos */
+.card-img-top {
+  height: 250px;      
+  object-fit: cover; 
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  flex-grow: 1;
+  max-height: 200px;     
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-rojo {
+  background-color: #D62828 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-rojo:hover {
+  background-color: #b22222 !important;
+}
+
+
 .grid-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
